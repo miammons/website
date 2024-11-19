@@ -211,10 +211,29 @@
     padding: 0 50px;
 }
 
-.main__continer h1{
+.main__container h1{
     font-size: 4rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb1ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__container h2{
+    background-color: #fff;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb1ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.main__container p{
+    background-color: #fff;
+    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
