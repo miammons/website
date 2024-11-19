@@ -1,56 +1,61 @@
-/* Reset default margins and padding */
+/* Basic reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #333;
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul li {
-  background-color: #f9f9f9;
-  padding: 10px;
-  margin-bottom: 5px;
-}
-
-footer {
-  text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .tabs {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .tab-links li {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-links li.active {
+    background-color: #333;
+    color: white;
+  }
+  
+  .tab-links li:hover {
+    background-color: #bbb;
+  }
+  
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
