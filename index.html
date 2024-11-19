@@ -4,44 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d72c8a1900.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="tabs">
-        <ul class="tab-links">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <!-- Navigation Bar Section-->
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fa-solid fa-house"></i>&nbsp;Ammons</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/tech.html" class="navbar__links">Tech</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/lab.html" class="navbar__links">Lab</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/" class="button">Sign Up</a>
+            </li>
         </ul>
-  <header>
-    <h1>Welcome</h1>
-  </header>
+    </div>
+  </nav>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I am a full-time sysadmin in northwest Iowa and a tech director for a local church.</p>
-    </section>
-
-    <section>
-      <h2>Socials</h2>
-      <ul>
-        <a href="https://www.linkedin.com/in/miammons/">LinkedIn</a>
-        <a href="https://x.com/mammons06">Twitter</a>
-      </ul>
-    </section>
-    <section>
-        <h2>Home Lab</h2>
-        <p>I just recently started getting into website coding, dont expect much there</p>
-        <p>I run HomeAssistant at home on a Raspberry Pi and have many smart devices tied in to the system. I am always looking for more thigs to add though.
-            I play around with an Active Directory environment I have running in Hyper-V. The storage is all hosted on a synology nas and an Unraid server.
-        </p>
-    </section>
-  </main>
-
+  <!-- Hero Section-->
+  <div class="main">
+    <div class="main__continer">
+        <div class="main__content">
+            <h1>Next Generation</h1>
+            <h2>Technology</h2>
+            <p>See what makes us different.</p>
+            <button class="main__btn"><a href="/">Get Started</a></button>
+        </div>
+        <div class="main__img--container">
+            <img src="images/programmer.svg" alt="pic" id="main__img" />
+        </div>
+    </div>
+  </div>
   <footer>
     <p>&copy; 2024</p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
