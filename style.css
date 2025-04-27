@@ -259,7 +259,7 @@
   
   .main__content p {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #b8b8b8;
   }
@@ -312,6 +312,37 @@
   #main__img {
     height: 80%;
     width: 80%;
+  }
+  .main__content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #b8b8b8;
+  }
+  .main__content ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #b8b8b8;
+  }
+  .main__content ul ul ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #b8b8b8;
+  }
+  .main__content li {
+    margin-left: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #b8b8b8;
   }
   
   /* Mobile Responsive */
