@@ -400,6 +400,21 @@ html, body {
   font-weight: 700;
   color: #b8b8b8;
 }
+.blog__content img {
+  float: right;
+  width: 100%;
+  max-width: 400px; /* or whatever size you prefer */
+  height: auto;
+  margin: 1rem 1rem 2rem 0rem;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.blog__content img:hover {
+  transform: scale(1.02);
+}
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
